@@ -28,7 +28,10 @@ public class Main {
         }
 
         finally {
-            System.out.println("Уничтожаем рабочие данные!");
+            num = 0;
+            line = "";
+            nums = new int[0];
+            System.out.println("Уничтожаем артефакты работы! " + num + line);
             num = 0;
             line = "";
             nums = new int[0];
