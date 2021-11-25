@@ -53,10 +53,10 @@ public class Main {
                         System.out.println(element);
                     }
                     e.printStackTrace();
-                    throw e;
+                    throw new RuntimeException(e);
                 }
             }
-        } catch (Exception ioException) {
+        } catch (RuntimeException ioException) {
             System.out.println();
             System.out.println(ioException.getMessage());
             for (StackTraceElement element : ioException.getStackTrace()) {
